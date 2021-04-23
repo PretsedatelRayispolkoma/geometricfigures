@@ -46,8 +46,26 @@ namespace geometricfigures
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var graphics = DrawPanel.CreateGraphics();
-            var pen = new Pen(Color.Purple, 5);
+            try
+            {
+                var tb1 = textBox1.Text;
+                var fp = tb1.Split();
+                int x1 = Convert.ToInt32(fp[0]);
+                int y1 = Convert.ToInt32(fp[1]);
+
+                var tb2 = textBox2.Text;
+                var lp = tb2.Split();
+                int x2 = Convert.ToInt32(lp[0]);
+                int y2 = Convert.ToInt32(lp[1]);
+
+                Point firstPoint = new Point(x1, y2);
+                Point lastPoint = new Point(x2, y2);
+
+                var graphics = DrawPanel.CreateGraphics();
+                var pen = new Pen(Color.Purple, 5);
+            }
+            catch(Exception)
+            { }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

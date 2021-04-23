@@ -63,7 +63,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(241, 12);
+            this.textBox1.Location = new System.Drawing.Point(256, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(241, 49);
+            this.textBox2.Location = new System.Drawing.Point(256, 49);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
@@ -82,23 +82,23 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(174, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 4;
-            this.label1.Text = "X cordinate";
+            this.label1.Text = "First Point (XY)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(174, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Y cordinate";
+            this.label2.Text = "Last Point (XY)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(241, 86);
+            this.textBox3.Location = new System.Drawing.Point(256, 86);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 6;
