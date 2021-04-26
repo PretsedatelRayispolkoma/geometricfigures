@@ -15,8 +15,7 @@ namespace geometricfigures
         public Form1()
         {
             InitializeComponent();
-            Text = "Risui";
-            this.BackColor = Color.Aqua; 
+            Text = "Risui"; 
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -58,12 +57,13 @@ namespace geometricfigures
                 int x2 = Convert.ToInt32(lp[0]);
                 int y2 = Convert.ToInt32(lp[1]);
 
-                Point firstPoint = new Point(x1, y2);
+                Point firstPoint = new Point(x1, y1);
                 Point lastPoint = new Point(x2, y2);
 
                 var graphics = DrawPanel.CreateGraphics();
                 var pen = new Pen(Color.Purple, 5);
-            }
+                
+                
             catch(Exception)
             { }
         }
@@ -72,5 +72,15 @@ namespace geometricfigures
         {
            
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+
+        private void line_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+    }
