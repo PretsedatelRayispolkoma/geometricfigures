@@ -12,10 +12,12 @@ namespace geometricfigures
 {
     public partial class Form1 : Form
     {
+        Graphics graphics;
         public Form1()
         {
             InitializeComponent();
-            Text = "Risui"; 
+            Text = "Risui";
+            graphics = DrawPanel.CreateGraphics();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -60,27 +62,34 @@ namespace geometricfigures
                 Point firstPoint = new Point(x1, y1);
                 Point lastPoint = new Point(x2, y2);
 
-                var graphics = DrawPanel.CreateGraphics();
+                
                 var pen = new Pen(Color.Purple, 5);
-                
-                
-            catch(Exception)
+
+                graphics.DrawLine(pen, firstPoint, lastPoint);
+            }
+
+            catch (Exception)
             { }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
-    }
 
         private void line_CheckedChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            graphics.Clear(Color.White);
         }
     }
+}

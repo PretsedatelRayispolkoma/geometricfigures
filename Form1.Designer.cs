@@ -38,14 +38,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.Figures = new System.Windows.Forms.GroupBox();
             this.ControlPanel = new System.Windows.Forms.Panel();
-            this.line = new System.Windows.Forms.RadioButton();
-            this.rectangle = new System.Windows.Forms.RadioButton();
-            this.triangle = new System.Windows.Forms.RadioButton();
-            this.circle = new System.Windows.Forms.RadioButton();
             this.Cordinates = new System.Windows.Forms.GroupBox();
-            this.Figures.SuspendLayout();
             this.ControlPanel.SuspendLayout();
             this.Cordinates.SuspendLayout();
             this.SuspendLayout();
@@ -131,75 +125,19 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Remove";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // Figures
-            // 
-            this.Figures.Controls.Add(this.circle);
-            this.Figures.Controls.Add(this.triangle);
-            this.Figures.Controls.Add(this.rectangle);
-            this.Figures.Controls.Add(this.line);
-            this.Figures.Location = new System.Drawing.Point(21, 3);
-            this.Figures.Name = "Figures";
-            this.Figures.Size = new System.Drawing.Size(120, 110);
-            this.Figures.TabIndex = 9;
-            this.Figures.TabStop = false;
-            this.Figures.Text = "Figures";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ControlPanel
             // 
             this.ControlPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ControlPanel.BackgroundImage")));
             this.ControlPanel.Controls.Add(this.Cordinates);
             this.ControlPanel.Controls.Add(this.button2);
-            this.ControlPanel.Controls.Add(this.Figures);
             this.ControlPanel.Controls.Add(this.button1);
             this.ControlPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.ControlPanel.Location = new System.Drawing.Point(0, 0);
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Size = new System.Drawing.Size(170, 450);
             this.ControlPanel.TabIndex = 10;
-            // 
-            // line
-            // 
-            this.line.AutoSize = true;
-            this.line.Checked = true;
-            this.line.Location = new System.Drawing.Point(24, 12);
-            this.line.Name = "line";
-            this.line.Size = new System.Drawing.Size(45, 17);
-            this.line.TabIndex = 0;
-            this.line.TabStop = true;
-            this.line.Text = "Line";
-            this.line.UseVisualStyleBackColor = true;
-            this.line.CheckedChanged += new System.EventHandler(this.line_CheckedChanged);
-            // 
-            // rectangle
-            // 
-            this.rectangle.AutoSize = true;
-            this.rectangle.Location = new System.Drawing.Point(24, 35);
-            this.rectangle.Name = "rectangle";
-            this.rectangle.Size = new System.Drawing.Size(74, 17);
-            this.rectangle.TabIndex = 1;
-            this.rectangle.Text = "Rectangle";
-            this.rectangle.UseVisualStyleBackColor = true;
-            // 
-            // triangle
-            // 
-            this.triangle.AutoSize = true;
-            this.triangle.Location = new System.Drawing.Point(24, 58);
-            this.triangle.Name = "triangle";
-            this.triangle.Size = new System.Drawing.Size(63, 17);
-            this.triangle.TabIndex = 2;
-            this.triangle.Text = "Triangle";
-            this.triangle.UseVisualStyleBackColor = true;
-            // 
-            // circle
-            // 
-            this.circle.AutoSize = true;
-            this.circle.Location = new System.Drawing.Point(24, 81);
-            this.circle.Name = "circle";
-            this.circle.Size = new System.Drawing.Size(51, 17);
-            this.circle.TabIndex = 3;
-            this.circle.Text = "Circle";
-            this.circle.UseVisualStyleBackColor = true;
             // 
             // Cordinates
             // 
@@ -226,8 +164,6 @@
             this.Controls.Add(this.DrawPanel);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Figures.ResumeLayout(false);
-            this.Figures.PerformLayout();
             this.ControlPanel.ResumeLayout(false);
             this.Cordinates.ResumeLayout(false);
             this.Cordinates.PerformLayout();
@@ -246,11 +182,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox Figures;
-        private System.Windows.Forms.RadioButton circle;
-        private System.Windows.Forms.RadioButton triangle;
-        private System.Windows.Forms.RadioButton rectangle;
-        private System.Windows.Forms.RadioButton line;
         private System.Windows.Forms.Panel ControlPanel;
         private System.Windows.Forms.GroupBox Cordinates;
     }
